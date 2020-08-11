@@ -1,5 +1,4 @@
-# Cat_Dog_Classifier
-The following project is a Cat-Dog classifier, implemented using CNN and deployed using tflite as an android application
+
 
 Dataset- 
  The dataset are taken from kaggle API KEY - "kaggle datasets download -d chetankv/dogs-cats-images" 
@@ -45,10 +44,10 @@ Dataset-
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center">Cat_Dog_Classifier</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    The following project is a Cat-Dog classifier, implemented using CNN and deployed using tflite as an android application
     <br />
     <a href="https://github.com/github_username/repo"><strong>Explore the docs »</strong></a>
     <br />
