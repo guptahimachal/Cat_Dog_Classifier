@@ -5,14 +5,14 @@ Dataset-
 
 <!--
 *** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
+*** make this better, please fork the Cat_Dog_Classifier and create a pull request or simply open
 *** an issue with the tag "enhancement".
 *** Thanks again! Now go create something AMAZING! :D
 ***
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo, twitter_handle, email
+*** guptahimachal, Cat_Dog_Classifier, twitter_handle, email
 -->
 
 
@@ -40,7 +40,7 @@ Dataset-
 <br />
 <p align="center">
   <a href="https://github.com/
-           /repo">
+           /Cat_Dog_Classifier">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -49,14 +49,14 @@ Dataset-
   <p align="center">
     The following project is a Cat-Dog classifier, implemented using CNN and deployed using tflite as an android application
     <br />
-    <a href="https://github.com/github_username/repo"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/guptahimachal/Cat_Dog_Classifier"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo">View Demo</a>
+    <a href="https://github.com/guptahimachal/Cat_Dog_Classifier">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo/issues">Report Bug</a>
+    <a href="https://github.com/guptahimachal/Cat_Dog_Classifier/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo/issues">Request Feature</a>
+    <a href="https://github.com/guptahimachal/Cat_Dog_Classifier/issues">Request Feature</a>
   </p>
 </p>
 
@@ -86,7 +86,7 @@ Dataset-
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo`, `twitter_handle`, `email`
+`guptahimachal`, `Cat_Dog_Classifier`, `twitter_handle`, `email`
 
 
 ### Built With
@@ -112,9 +112,9 @@ npm install npm@latest -g
 
 ### Installation
  
-1. Clone the repo
+1. Clone the Cat_Dog_Classifier
 ```sh
-git clone https://github.com/github_username/repo.git
+git clone https://github.com/guptahimachal/Cat_Dog_Classifier.git
 ```
 2. Install NPM packages
 ```sh
@@ -135,7 +135,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/guptahimachal/Cat_Dog_Classifier/issues) for a list of proposed features (and known issues).
 
 
 
@@ -164,7 +164,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
 
-Project Link: [https://github.com/github_username/repo](https://github.com/github_username/repo)
+Project Link: [https://github.com/guptahimachal/Cat_Dog_Classifier](https://github.com/guptahimachal/Cat_Dog_Classifier)
 
 
 
