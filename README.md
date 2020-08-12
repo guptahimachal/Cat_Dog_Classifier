@@ -1,24 +1,4 @@
 
-
-Dataset- 
- The dataset are taken from kaggle API KEY - "kaggle datasets download -d chetankv/dogs-cats-images" 
-
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the Cat_Dog_Classifier and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** guptahimachal, Cat_Dog_Classifier, twitter_handle, email
--->
-
-
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -95,7 +75,7 @@ I have used the 2000 test images for validation
 ### Prerequisites
 
 * tensorflow - '1.15.2'
-* Keras
+* Keras - '2.2.4-tf'
 
 ### Installation
 
@@ -121,9 +101,10 @@ from tensorflow.keras.layers import Dropout
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Using this project we can extend it to classification of images to different other classes , For example it can be used in tagging images while storing if one has to store a lot
+of images and search among them.
+**Directory Structure-**
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
