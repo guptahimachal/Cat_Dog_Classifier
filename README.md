@@ -105,27 +105,31 @@ Using this project we can extend it to classification of images to different oth
 of images and search among them.
 
  **Directory Structure-**
+```
 dataset
-
-dataset
-│       
-│
-└───test_set
-|         |
-│         └───cats
-              | 
-│         
-│         cats
-              
-│   └───subfolder1
-│       │   file111.txt
-│       │   file112.txt
-│       │   ...
-│   
-└───folder2
-    │   file021.txt
-    │   file022.txt
-
+  ├───test_set
+  |   ├───cats
+  |   |    └───cat.4001.jpg
+  |   |        cat.4002.jpg
+  |   |        ...
+  |   |
+  |   |
+  |   └───dogs
+  |        └───dog.4001.jpg
+  |            dog.4002.jpg
+  |            ...
+  |
+  └───training_set
+      ├───cats
+      |     └───cat.1.jpg
+      |         cat.10.jpg
+      |         ...
+      |
+      └───dogs
+           └───dog.1.jpg
+               dog.10.jpg
+               ...
+  ```
 
 <!-- ROADMAP -->
 ## Roadmap
