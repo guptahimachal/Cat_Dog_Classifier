@@ -65,7 +65,6 @@ Dataset-
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -83,42 +82,39 @@ Dataset-
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`guptahimachal`, `Cat_Dog_Classifier`, `twitter_handle`, `email`
 
-
-### Built With
-
-* []()
-* []()
-* []()
+**Image Classification - Cat or Dog using Convolution Neural Network:**
+I have used Google Colab Notebook and implemented with keras
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
+The datasets are taken from [Kaggle][Dataset]. It consist of 8000 training set and 2000 test set.
+I have used the 2000 test images for validation
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+* tensorflow - '1.15.2'
+* Keras
 
 ### Installation
- 
-1. Clone the Cat_Dog_Classifier
-```sh
-git clone https://github.com/guptahimachal/Cat_Dog_Classifier.git
+
+
+1. For selecting tensorflow in  Colab Notebook
+```python
+%tensorflow_version 1.x
+import tensorflow as tf
 ```
-2. Install NPM packages
-```sh
-npm install
-```
+2. Keras
+```python
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Convolution2D
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras.layers import MaxPool2D
+from tensorflow.keras.layers import Flatten
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.layers import Dropout
+``` 
 
 
 
@@ -187,3 +183,4 @@ Project Link: [https://github.com/guptahimachal/Cat_Dog_Classifier](https://gith
 [license-url]: https://github.com/guptahimachal/Cat_Dog_Classifier/blob/master/LICENSE.txt
 [linkedin-url]: https://linkedin.com/in/guptahimachal
 [product-screenshot]: images/screenshot.png
+[Dataset]: https://www.kaggle.com/chetankv/dogs-cats-images
