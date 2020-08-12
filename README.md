@@ -31,7 +31,6 @@ Dataset-
 [ Forks ][forks-url]
 [ Stargazers ][stars-url]
 [ Issues ][issues-url]
-[ MIT License ][license-url]
 [ LinkedIn ][linkedin-url]
 
 
@@ -186,5 +185,5 @@ Project Link: [https://github.com/guptahimachal/Cat_Dog_Classifier](https://gith
 [stars-url]: https://github.com/guptahimachal/Cat_Dog_Classifier/stargazers
 [issues-url]: https://github.com/guptahimachal/Cat_Dog_Classifier/issues
 [license-url]: https://github.com/guptahimachal/Cat_Dog_Classifier/blob/master/LICENSE.txt
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/guptahimachal
 [product-screenshot]: images/screenshot.png
