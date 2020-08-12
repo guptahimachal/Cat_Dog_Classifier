@@ -103,9 +103,28 @@ from tensorflow.keras.layers import Dropout
 
 Using this project we can extend it to classification of images to different other classes , For example it can be used in tagging images while storing if one has to store a lot
 of images and search among them.
-**Directory Structure-**
 
+ **Directory Structure-**
+dataset
 
+dataset
+│       
+│
+└───test_set
+|         |
+│         └───cats
+              | 
+│         
+│         cats
+              
+│   └───subfolder1
+│       │   file111.txt
+│       │   file112.txt
+│       │   ...
+│   
+└───folder2
+    │   file021.txt
+    │   file022.txt
 
 
 <!-- ROADMAP -->
