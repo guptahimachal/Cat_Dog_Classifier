@@ -45,16 +45,17 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+  * [Use Cases](#use-cases)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
   * [MODEL_1](#MODEL_1)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
+  * [MODEL_2](#MODEL_2)
+  * [MODEL_3](#MODEL_3)
+  * [MODEL_4](#MODEL_4)
+* [Deployment](#demloyment)
 
 
 
@@ -66,6 +67,8 @@
 
 **Image Classification - Cat or Dog using Convolution Neural Network:**
 I have used Google Colab Notebook and implemented with keras
+
+### Use Cases
 
 
 
@@ -168,42 +171,136 @@ _________________________________________________________________
 <img src="classifier1/loss.png" width = "1000" height = "500">
 
 
-<!-- CONTRIBUTING -->
-## Contributing
+### MODEL_2
+```
+Model: "sequential_2"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_3 (Conv2D)            (None, 62, 62, 32)        896       
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 31, 31, 32)        0         
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 29, 29, 32)        9248      
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 14, 14, 32)        0         
+_________________________________________________________________
+flatten_2 (Flatten)          (None, 6272)              0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 128)               802944    
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_4 (Dense)              (None, 64)                8256      
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 64)                0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 1)                 65        
+=================================================================
+Total params: 821,409
+Trainable params: 821,409
+Non-trainable params: 0
+_________________________________________________________________
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+```
+<img src="classifier2/Classifier2 with modification/loss.png" width = "1000" height = "500">
 
 
+### MODEL_3
 
-<!-- LICENSE -->
-## License
+Here I have decrease the learning rate of RMSProp Opimizer to 0.0001
 
-Distributed under the MIT License. See `LICENSE` for more information.
+```
+
+Model: "sequential_3"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_10 (Conv2D)           (None, 62, 62, 64)        1792      
+_________________________________________________________________
+conv2d_11 (Conv2D)           (None, 60, 60, 128)       73856     
+_________________________________________________________________
+conv2d_12 (Conv2D)           (None, 58, 58, 256)       295168    
+_________________________________________________________________
+max_pooling2d_6 (MaxPooling2 (None, 29, 29, 256)       0         
+_________________________________________________________________
+conv2d_13 (Conv2D)           (None, 27, 27, 256)       590080    
+_________________________________________________________________
+max_pooling2d_7 (MaxPooling2 (None, 13, 13, 256)       0         
+_________________________________________________________________
+conv2d_14 (Conv2D)           (None, 11, 11, 512)       1180160   
+_________________________________________________________________
+max_pooling2d_8 (MaxPooling2 (None, 5, 5, 512)         0         
+_________________________________________________________________
+flatten_3 (Flatten)          (None, 12800)             0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 256)               3277056   
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 256)               0         
+_________________________________________________________________
+dense_6 (Dense)              (None, 1)                 257       
+=================================================================
+Total params: 5,418,369
+Trainable params: 5,418,369
+Non-trainable params: 0
+```
+
+<img src="classifier3/RUN_5/loss.png" width = "1000" height = "500">
 
 
+### MODEL 4
 
-<!-- CONTACT -->
-## Contact
+Here along with the previous optimizer , changed the input image size from 64x64 to 128x128
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+```
 
-Project Link: [https://github.com/guptahimachal/Cat_Dog_Classifier](https://github.com/guptahimachal/Cat_Dog_Classifier)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 126, 126, 64)      1792      
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 124, 124, 128)     73856     
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 122, 122, 256)     295168    
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 61, 61, 256)       0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 59, 59, 256)       590080    
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 29, 29, 256)       0         
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 27, 27, 512)       1180160   
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 13, 13, 512)       0         
+_________________________________________________________________
+flatten (Flatten)            (None, 86528)             0         
+_________________________________________________________________
+dense (Dense)                (None, 256)               22151424  
+_________________________________________________________________
+dropout (Dropout)            (None, 256)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 257       
+=================================================================
+Total params: 24,292,737
+Trainable params: 24,292,737
+Non-trainable params: 0
+_________________________________________________________________
+```
+<img src="classifier4/run3/loss.png" width = "1000" height = "500">
+
+## Deployment - using Tensorflow Lite
 
 
+For the deployment of the model , I have saved the model and converted it to tflite format and made a simple android application which takes an input image, and transform it into model's input shape (3x128x128 or 3x64x64) and pass it to the model dispalying the percentage of result.
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
 
-* []()
-* []()
-* []()
-
+```python
+model.save('model.h5')
+converter = tf.lite.TFLiteConverter.from_keras_model_file( '/content/model.h5' ) # Your model's name
+modeltf = converter.convert()
+file = open( 'model.tflite' , 'wb' ) 
+file.write(modeltf)
+```
 
 
 
