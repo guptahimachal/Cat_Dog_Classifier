@@ -141,7 +141,7 @@ We have used ImageDataGenerator which provide a different configuration of image
 We start by using a simple model architecture - 
 
 <!-- MODEL_1 -->
-## MODEL_1
+### MODEL_1
 
 ```
 Model: "sequential_1"
@@ -165,7 +165,7 @@ Trainable params: 3,937,409
 Non-trainable params: 0
 _________________________________________________________________
 ```
-<img src="classifier1/loss.png">
+<img src="classifier1/loss.png" width = "1000" height = "500">
 
 
 <!-- CONTRIBUTING -->
