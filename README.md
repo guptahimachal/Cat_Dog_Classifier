@@ -50,6 +50,7 @@
   * [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
+  * [MODEL_1](#MODEL_1)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
@@ -134,8 +135,37 @@ dataset
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/guptahimachal/Cat_Dog_Classifier/issues) for a list of proposed features (and known issues).
+In the training set we have 4000 images/class and validation we have 1000 images per class
+We have used ImageDataGenerator which provide a different configuration of image for each epoch which differ by different properties like zoom, horizontal/vertical shift, flip, rotation etc.
 
+We start by using a simple model architecture - 
+
+<!-- MODEL_1 -->
+## MODEL_1
+
+```
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_1 (Conv2D)            (None, 62, 62, 32)        896       
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 31, 31, 32)        0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 30752)             0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 128)               3936384   
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 129       
+=================================================================
+Total params: 3,937,409
+Trainable params: 3,937,409
+Non-trainable params: 0
+_________________________________________________________________
+```
+<img src="classifier1/loss.png">
 
 
 <!-- CONTRIBUTING -->
