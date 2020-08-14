@@ -1,12 +1,3 @@
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [ Contributors ][contributors-url]
 [ Forks ][forks-url]
 [ Stargazers ][stars-url]
@@ -62,15 +53,24 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 
 **Image Classification - Cat or Dog using Convolution Neural Network:**
 I have used Google Colab Notebook and implemented with keras
 
 ### Use Cases
 
-
+<p float="left">
+<img src="use_cases/Screenshot_2020-08-12-15-55-18-055_com.example.samplecatdog.jpg" width = "400" height = "711"> 
+<img src="use_cases/Screenshot_2020-08-12-15-55-41-901_com.example.samplecatdog.jpg" width = "400" height = "711">
+</p>
+<p float="left">
+<img src="use_cases/Screenshot_2020-08-14-17-33-14-513_com.example.samplecatdog.jpg" width = "400" height = "711">
+<img src="use_cases/Screenshot_2020-08-14-17-33-40-462_com.example.samplecatdog.jpg" width = "400" height = "711">
+</p>
+<p float="left">
+<img src="use_cases/Screenshot_2020-08-14-17-34-11-984_com.example.samplecatdog.jpg" width = "400" height = "711">
+<img src="use_cases/Screenshot_2020-08-14-17-35-59-294_com.example.samplecatdog.jpg" width = "400" height = "711">
+</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -306,7 +306,6 @@ file.write(modeltf)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-url]: https://github.com/guptahimachal/Cat_Dog_Classifier/graphs/contributors
 [forks-url]: https://github.com/guptahimachal/Cat_Dog_Classifier/network/members
 [stars-url]: https://github.com/guptahimachal/Cat_Dog_Classifier/stargazers
